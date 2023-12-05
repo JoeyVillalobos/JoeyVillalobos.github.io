@@ -1,0 +1,91 @@
+
+
+<!Doctype html>
+<html>
+<head> Filtered </head>
+<title> My filtered </title>
+<body>
+<h1> This is my Fifth page - Filtered </h1>
+<nav style='background-color:lightblue; text-align:center; font-weight:bold; font-size:150%'>
+<a href='joey.html'> About Me </a> &nbsp &nbsp
+<a href='page 2_hobby.html'> My Hobbies </a>  &nbsp &nbsp
+<a href='Contact info.html'> Contact Info</a> &nbsp &nbsp
+<a href='p4_artwork.html'> Art Work</a> &nbsp &nbsp
+<a href='filter.html'> Filter</a>
+</nav>
+<style>
+div.img1:hover{
+-webkit-transform: scaleX(-1);
+transfrom: scaleX(-1);
+}
+
+div.img2:hover{
+animation: shake 0.5s;
+animation-iteration-count: infinite;
+}
+@keyframes shake{
+0% { transform: translate(1px, 1px) rotate(0deg); }
+20% { transform: translate(-3px, 0px) rotate(10deg); }
+100% { transform: translate(1px, -2px) rotate(-10deg); }
+}
+div.img3 {
+position: relative;
+animation-name: move;
+animation-duration: 20s;
+animation-delay: 2s;
+}
+@keyframes move {
+0% { left:0px; top:0px;}
+25% {left:200px; top:0px;}
+50% {left:200px; top:200px;}
+75% {left:0px; top:200px;}
+100% {left:0px; top:0px;}
+}
+.tooltip {
+ position: relative;
+ display: inline-block;
+ border-bottom: 1px dotted black;
+ }
+ 
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+/* postion the tooltip */
+postion: absolute;
+z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+ visibility: visible;
+ }
+</style>
+
+<div class ='img1'>
+<img src='r33.jfif' height='200' width='300'>
+<p style='font-size:50px'> <em> My Dream Car </p><br><br>
+</div>
+<div class='img2'>
+<img src='poster Joey.jpg' height='300' width='200'> <br><br>
+</div>
+<div class='img3'>
+<img src='Car_Joey.jpg' height='200' width='200'> <br><br>
+</div>
+<div class='tooltip'> <b><u> hover over this line
+<div class='tooltiptext'>
+<img src='02_Joeyvillalobos.jpg' height='300' width='200'> <br><br>
+</div></div>
+<div class='column'>
+<img src='lesson4_Joey_postcard.jpg' height='300' width='200'> <br><br>
+</div>
+
+
+
+
+
+
+</body>
+</html>

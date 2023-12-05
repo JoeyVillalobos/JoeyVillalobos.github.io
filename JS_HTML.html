@@ -1,0 +1,56 @@
+<!Doctype HTMl>
+<html>
+<head>
+ <title> JS-HTML Integration </title>
+ </head>
+ 
+ <body>
+ <script>
+ </script>
+ <h1> Let's Integrate HTML page with JS </h1>
+ 
+<p>This is my first page HTML page with Javascript</p>
+
+<button type='button' onclick='loop()'> Print out numbers from 1-10 </button>
+
+<p id = 'demo'> Numbers you requested...</p>
+
+<script>
+ function random(){
+ var random = Math.random();
+ var numbers = Math.floor ((random*10)+1);
+ console.log(numbers);
+ document.getElementById("demo1").innerHTML = numbers;
+ }
+ </script>
+ 
+<button type='button' onclick='random()'> Click me to get random number</button>
+
+<p id = 'demo1'> ...</p>
+
+<script>
+
+function diffDate(){
+var nDate = new Date();
+var uChoice = prompt ('Enter your date', 'yyyy-mm-dd');
+var oDate = new Date(uChoice);
+var difference = nDate.getTime() - oDate.getTime();
+
+console.log(difference);
+
+var diff_Days = difference/(1000*60*60*24);
+
+document.getElementById('demo2').innerHTML = 'The number of days betweem today and your date is ' + diff_Days.toFixed(1);
+
+}
+
+
+</script>
+
+<hr><br>
+<button type='button' onclick='diffDate()'> Click me </button>
+
+<p id = 'demo2'> Difference is in days ....</p>
+
+</body>
+</html>
